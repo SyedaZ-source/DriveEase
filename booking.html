@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Car | DriveEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">DriveEase</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cars.html">Available Cars</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="faqs.html">FAQs</a>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Book Your Car</h1>
+        <p>Complete the form to request your booking.</p>
+    </section>
+
+    <main class="page-content">
+        <div id="booking-car"></div>
+
+        <form id="booking-form" class="booking-form">
+
+            <label for="customer-name">Full Name</label>
+            <input type="text" id="customer-name"
+                placeholder="Enter your full name" required>
+
+            <label for="customer-phone">Phone Number</label>
+            <input type="tel" id="customer-phone"
+                placeholder="Enter your phone number"
+                required>
+
+            <label for="pickup-date">Pickup Date</label>
+            <input type="date" id="pickup-date" required>
+
+            <label for="return-date">Return Date</label>
+            <input type="date" id="return-date" required>
+
+            <div class="booking-total">
+                <p>Rental Days: <span id="rental-days">0</span></p>
+                <h3>Total Rent: Rs. <span id="total-rent">0</span></h3>
+            </div>
+
+            <button type="submit" class="btn">
+                Submit Booking Request
+            </button>
+
+            <p id="booking-message"></p>
+
+        </form>
+
+        <a href="cars.html" class="btn">Back to Cars</a>
+    </main>
+
+    <footer>
+        <p>© 2026 DriveEase Car Rental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

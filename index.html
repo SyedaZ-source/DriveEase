@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DriveEase | Car Rental</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <a href="index.html" class="logo">DriveEase</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cars.html">Available Cars</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="faqs.html">FAQs</a>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tagline">YOUR JOURNEY, YOUR WAY</p>
+                <h1>Find Your Perfect Rental Car</h1>
+                <p>Comfortable, Affordable and reliable cars for your next journey.
+
+                </p>
+                <a href="cars.html" class="btn">Explore Cars</a>
+            </div>
+        
+        </section>
+        <section class="section">
+            <h2>Why Choose DriveEase</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Affordable Prices</h3>
+                    <p>Choose a car that matches your budget.</p>
+                </div>
+                <div class="feature">
+                    <h3>Easy Booking</h3>
+                    <p>Book your favourite car easily.</p>                </div>
+            </div>
+            <div class="feature">
+                <h3>Reliable Cars</h3>
+                <p>Find a suitable car for your journey.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Our Popular Cars</h2>
+            <div id="home-cars" class="car-grid"></div>
+        </section>
+        
+        <!-- Chatbot -->
+<!-- Floating Chat Button -->
+<button id="chat-toggle" onclick="toggleChat()">💬</button>
+
+<!-- Chatbot Window -->
+<div id="chatbot" class="chatbot-hidden">
+    <div id="chat-header">
+        <span>DriveEase Assistant</span>
+        <button id="chat-close" onclick="toggleChat()">×</button>
+    </div>
+
+    <div id="chat-messages">
+        <p class="bot-message">
+            Hi! Welcome to DriveEase. How can I help you?
+        </p>
+    </div>
+
+    <div id="chat-input-area">
+        <input
+            type="text"
+            id="chat-input"
+            placeholder="Ask about cars or prices..."
+        >
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<script src="script.js"></script>
+    </body>
+</html>

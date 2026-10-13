@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Cars | DriveEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">DriveEase</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cars.html">Available Cars</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="faqs.html">FAQs</a>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Available Cars</h1>
+        <p>Choose the perfect car for your journey.</p>
+    </section>
+
+    <main class="page-content">
+
+        <input
+            type="search"
+            id="car-search"
+            class="search-input"
+            placeholder="Search car by name..."
+        >
+
+        <div class="form-group">
+            <label for="type-filter">Filter by Type</label>
+
+            <select id="type-filter">
+                <option value="All">All Cars</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Hatchback">Hatchback</option>
+            </select>
+        </div>
+
+        <div id="cars-list" class="car-grid"></div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 DriveEase Car Rental</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
